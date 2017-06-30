@@ -1,0 +1,16 @@
+<?php
+
+DEFINE('DB_USER','root');
+DEFINE('DB_PSWD','Etelvina');
+DEFINE('DB_HOST','localhost');
+DEFINE('DB_NAME','unaGauchada');
+
+$dbcon=mysqli_connect(DB_HOST,DB_USER,DB_PSWD,DB_NAME);
+//check for successful connection
+if (!$dbcon){
+   die('Error connecting to data base');
+  }
+
+echo 'You have connected successfully';
+
+?>
